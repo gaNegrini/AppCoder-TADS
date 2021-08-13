@@ -10,7 +10,7 @@ export class AppComponent {
     { title: 'Aprender', url: '/folder/Aprender', icon: 'book' },
     { title: 'Perfil', url: '/folder/Perfil', icon: 'person' },
     { title: 'Sobre', url: '/folder/Sobre', icon: 'alert-circle' },
-    { title: 'Desconectar', url: 'login', icon: 'close' },
+    { title: 'Desconectar', url: 'entrada/login', icon: 'close' },
   ];
 
   constructor() {}
