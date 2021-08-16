@@ -1,8 +1,13 @@
 ion-content {
-  --background: #422749 no-repeat
+  --background: #422749 url("../../../../assets/backgrounds/bgroxonot.png") no-repeat
     center center / cover !important;
   --overflow: show;
 }
+
+  ion-toolbar {
+    --opacity: 0.0;
+    position: absolute;
+  }
 
 .content-header {
   display: flex;
@@ -15,7 +20,7 @@ ion-content {
     width: 300px;
     height: 300px;
     position: relative;
-    border-radius: 120px;
+    border-radius: 100px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom: solid 15px #35183b;
@@ -24,14 +29,14 @@ ion-content {
 
   .circulo2 {
     width: 300px;
-    height: 300px;
+    height: 330px;
     background-image: url('../../../../assets/backgrounds/bgroxonot.png');
     position: absolute;
-    border-radius: 120px;
+    border-radius: 100px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom: solid 15px #35183b;
-    box-shadow: rgba(19, 19, 255, 0.295) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-shadow: rgba(115, 61, 241, 0.295) 0px 30px 60px -12px inset, rgba(128, 15, 15, 0.3) 0px 18px 36px -18px inset;
   }
 
   p {

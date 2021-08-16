@@ -1,0 +1,21 @@
+ion-content {
+  --background: #422749 url("../../../../assets/backgrounds/bgroxonot.png") no-repeat
+    center center / cover !important;
+}
+
+ion-toolbar {
+    --opacity: 0.0;
+    position: absolute;
+  }
+
+.content-sobre {
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  padding-top: 130px;
+}
+
+p {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+}
