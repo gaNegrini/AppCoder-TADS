@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
   public inputNames = [
-    { title: 'Usuário', type: ''},
+    { title: 'Nome', type: 'text'},
     { title: 'Senha', type: 'password'},
   ];
 
