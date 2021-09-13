@@ -1,6 +1,7 @@
 ion-content {
     --background: #422749 url("../../../../assets/backgrounds/bgroxonot.png") no-repeat
       center center / cover !important;
+      --overflow: show;
   }
 
   ion-toolbar {
@@ -21,4 +22,23 @@ ion-content {
     }
 
     
+}
+
+ion-item {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  --background: none;
+  opacity: 1;
+  color: white;
+}
+
+ion-button {
+  margin: 15px;
+}
+
+ion-list {
+  font-size: 20px;
+  ion-item {
+    font-size: 18px;
+  }
 }

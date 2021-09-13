@@ -12,21 +12,20 @@ import { Router } from '@angular/router';
 export class RegistroComponent {
 
   public user: User = {
-    nome: '',
-    email: '',
-    password: ''
-  }
+    nome: null,
+    email:  null,
+    password: null
+  };
 
-  constructor(private userService: UserService, private router: Router) {
-  
-  }
+  constructor(private userService: UserService, private router: Router) {}
 
-  registrar(): void { 
+  registrar(): void {
+    console.log(this.user)
     this.userService.create(this.user).subscribe(() => {
-      console.log('Usuário criado com sucesso!')
-    })
-    this.router.navigate(['/entrada/login'])
-  }
+      console.log('Usuário criado com sucesso!');
+    });
+     this.router.navigate(['/entrada/login']);
+  };
 
 
 }

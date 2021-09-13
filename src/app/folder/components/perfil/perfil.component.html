@@ -15,8 +15,44 @@
   </div>
   
   <div class="op-perfil">
-    <ion-button expand="full" color="secondary">Editar perfil</ion-button>
-    <ion-button expand="full" color="secondary">Desconectar</ion-button>
+
+  <form>
+    <ion-button expand="full" color="secondary" type="submit" id="confirm" (click)="atualizar()">Editar perfil</ion-button>
+  
+    <ion-item>
+      <ion-label position="floating">Email atual</ion-label>
+      <ion-input type="email" required name="email" [(ngModel)]="newuser.email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Novo nome</ion-label>
+      <ion-input type="text" required name="nome" [(ngModel)]="newuser.nome"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Novo email</ion-label>
+      <ion-input type="email" required name="newemail" [(ngModel)]="newuser.newemail"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Nova senha</ion-label>
+      <ion-input type="password" required name="password" [(ngModel)]="newuser.password"></ion-input>
+    </ion-item>
+  </form>
+
+  <form>
+    <ion-button expand="full" color="secondary" type="submit" id="confirm" (click)="deletar()">Deletar perfil</ion-button>
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email" required name="email" [(ngModel)]="email.email"></ion-input>
+    </ion-item>
+  </form>
+
+  <ion-button expand="full" color="secondary" type="submit" (click)="ler()">Mostrar usuários</ion-button>
+
+  <ion-list lines=full>
+    <ion-item *ngFor="let u of users; let i = index">
+      <ion-label>{{u.nome}}</ion-label>
+    </ion-item>
+  </ion-list>
+
   </div>
 
 </ion-content>
